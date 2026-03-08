@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "name": "Start Vite Server",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "console": "integratedTerminal"
+    },
+    {
+        "name": "Debug Client (Edge)",
+        "type": "msedge",
+        "request": "launch",
+        "url": "http://localhost:4173",
+        "webRoot": "${workspaceFolder}/src"
+    },
+  ],
+  "compounds": [
+    {
+      "name": "Full Debug (Server + Client)",
+      "configurations": ["Debug Client (Edge)"],
+      "preLaunchTask": "npm: dev"
+    }
+  ]
+}

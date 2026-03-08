@@ -1,0 +1,12 @@
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    background: #f8f8ff;
+    margin: 0;
+    padding: 0;
+}
+.header, main { max-width: 700px; margin: 0 auto; }
+.header { background: #ffe4e1; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
+.button { background: #da70d6; color: #fff; padding: 0.5em 1.5em; border: none; }
+.input { margin-bottom: .5em; padding: .5em; }
+.error { color: #c00; margin: .5em 0; }
+.loader { color: #888; }
